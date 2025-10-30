@@ -1,0 +1,20 @@
+server:
+  port: 8989
+spring:
+  web:
+    resources:
+      chain:
+        cache: false
+  datasource:
+    url: jdbc:postgresql://localhost:33333/rni-mvp
+    username: rni-mvp
+    password: rni-mvp
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
